@@ -8,18 +8,19 @@ public class ListStuff {
   }
 
   public static void addToBack(String s, StringNode Nold){
-    StringNode back = new StringNode();
-    back.data = s;
-    back.next = null;
+    StringNode newBack = new StringNode();
+    newBack.data = s;
+    newBack.next = null;
 
     if(Nold == null){
-      Nold = back;
-    }else{
-      StringNode last = Nold;
-      while(last.next != null){
-        last = last.next;
+      Nold = newBack;
+    }
+    else{
+      StringNode back = Nold;
+      while(back.next != null){
+        back = back.next;
       }
-      last.next = back;
+      back.next = newBack;
     }
   }
 
