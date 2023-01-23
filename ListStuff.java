@@ -1,26 +1,22 @@
 public class ListStuff {
   // addToFront(s,Nold) returns a StringNode reference representing the list obtained by adding s to the front of list Nold
-  public static StringNode addToFront(String s, StringNode Nold) {
+  public static void addToFront(String s, StringNode Nold) {
     StringNode front = new StringNode();
     front.data = s;
     front.next = Nold;
-    return front;
+    Nold = front;
   }
 
   public static void addToBack(String s, StringNode Nold){
-    StringNode newBack = new StringNode();
-    newBack.data = s;
-    newBack.next = null;
-
     if(Nold == null){
-      Nold = newBack;
+      addToFront(s, Nold);
     }
     else{
       StringNode back = Nold;
       while(back.next != null){
         back = back.next;
       }
-      back.next = newBack;
+      addToFront(s,back.next);
     }
   }
 
@@ -43,10 +39,10 @@ public class ListStuff {
   }
 
   public static void main(String [] Args) {
-    StringNode N = null;      // at this point N *is* an empty list
-    N = addToFront("rat",N);  // at this point N *is* the list ("rat")
-    N = addToFront("dog",N);  // at this point N *is* the list ("dog","rat")
-    N = addToFront("pig",N);  // at this point N *is* the list ("pig","dog","rat")
+    StringNode N = new StringNode();      // at this point N *is* an empty list
+    addToFront("rat",N);  // at this point N *is* the list ("rat")
+    addToFront("dog",N);  // at this point N *is* the list ("dog","rat")
+    addToFront("pig",N);  // at this point N *is* the list ("pig","dog","rat")
     String[] A = listToArray(N);
     for(int i = 0; i < A.length; i++) {
       System.out.println(A[i]);
