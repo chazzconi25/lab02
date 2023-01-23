@@ -1,3 +1,8 @@
+/**
+ * MidLibs Game
+ * @author David Kreidler
+ * @author Chazz
+ */
 public class MidLibs{
     public static void main(String [] args){
         String[] madLib = WordRead.get(args[0]);
