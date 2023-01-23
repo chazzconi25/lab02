@@ -10,10 +10,10 @@ public class WordRead{
             e.printStackTrace(); System.exit(1);
         }
 
-        StringNode stringList = new StringNode(); 
+        StringNode stringList = null; 
 
         while(sc.hasNext()){
-            ListStuff.addToBack(sc.next(), stringList);
+            stringList = ListStuff.addToFront(sc.next(), stringList);
         }
         return ListStuff.listToArray(stringList);
     }
@@ -21,7 +21,7 @@ public class WordRead{
     public static void main(String [] args){
         String[] S = get("nouns.txt");
 
-        for(int i = 0; i < S.length; i++){
+        for(int i = S.length - 1; i >= 0; i--){
             System.out.println(S[i]);
         }
     }

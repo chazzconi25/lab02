@@ -7,23 +7,6 @@ public class ListStuff {
     return front;
   }
 
-  public static void addToBack(String s, StringNode Nold){
-    StringNode newBack = new StringNode();
-    newBack.data = s;
-    newBack.next = null;
-
-    if(Nold == null){
-      Nold = newBack;
-    }
-    else{
-      StringNode back = Nold;
-      while(back.next != null){
-        back = back.next;
-      }
-      back.next = newBack;
-    }
-  }
-
   // listToArray(N) returns a reference to an array containing the same strings as in the list N (in the order they were received)
   public static String[] listToArray(StringNode N) {
     int length = ListLen(N);
