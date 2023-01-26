@@ -1,6 +1,14 @@
+/**
+ * Reads in text from a file to construct a linked list of all the words
+ * @author David Kreidler
+ */
+
 import java.io.*;
 import java.util.*;
-
+/**
+ * Reads in text from a file and creates a linked list
+ * @param fname The name of the file.
+ */
 public class WordRead{
     public static String[] get(String fname) {
         Scanner sc = null;
@@ -17,6 +25,11 @@ public class WordRead{
         }
         return ListStuff.listToArray(stringList);
     }
+
+    /**
+     * Prints out the contents of the linked list
+     * @param args default
+     */
 
     public static void main(String [] args){
         String[] S = get("nouns.txt");
