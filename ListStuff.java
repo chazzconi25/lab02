@@ -1,3 +1,8 @@
+/**
+ * Reads in text from a file to construct a linked list of all the words
+ * @author David Kreidler
+ */
+
 public class ListStuff {
   // addToFront(s,Nold) returns a StringNode reference representing the list obtained by adding s to the front of list Nold
   public static StringNode addToFront(String s, StringNode Nold) {

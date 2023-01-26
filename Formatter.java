@@ -1,3 +1,7 @@
+/**
+ * Used to take a String array and prints the array to termian
+ * @author Charlie Francesconi
+ */
 import java.util.*;
 public class Formatter {
     public static void writeInColumns(String[] A, int cols) {
