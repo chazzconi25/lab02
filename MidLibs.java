@@ -21,17 +21,10 @@ public class MidLibs{
         
     }
 
-<<<<<<< HEAD
-    /*
-     * @param
-     * @param
-     * @return
-=======
     /**
      * @param flag The noun, adjective, or verb that needs to be replaced
      * @param rand Random object
      * @return returns a random word from the randomword method
->>>>>>> 1d56753930bd67d6cdb33b727698c29026f585e4
      */
     public static String replace(String flag, Random rand) {
         if(flag.equals("@nounp")) {
@@ -44,17 +37,10 @@ public class MidLibs{
         return flag;
     }
 
-<<<<<<< HEAD
-    /*
-     * @param
-     * @param
-     * @return
-=======
     /**
      * @param file The name of the file
      * @param rand Random integer to gt a random word
      * @return returns a random word
->>>>>>> 1d56753930bd67d6cdb33b727698c29026f585e4
      */
     public static String randomWord(String file, Random rand) {
         String[] fileWords = WordRead.get(file);
