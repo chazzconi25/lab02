@@ -37,7 +37,8 @@ public class Formatter {
      */
     public static void main(String [] Args) {
         Scanner in = new Scanner(System.in);
-        String [] words = {"These", "are", "the", "times", "that", "try", "men's", "souls."};
+        String [] words = {"These", "are", "the", "times", "that", "try",
+                            "men's", "souls."};
         System.out.print("cols = ");
         int cols = in.nextInt();
         writeInColumns(words, cols);

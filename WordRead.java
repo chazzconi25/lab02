@@ -31,7 +31,6 @@ public class WordRead{
      * Prints out the contents of the linked list
      * @param args default
      */
-
     public static void main(String [] args){
         String[] S = get("nouns.txt");
 

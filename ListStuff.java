@@ -2,14 +2,15 @@
  * Reads in text from a file to construct a linked list of all the words
  * @author Charlie Francesconi
  * @author David Kreidler
- * 
  */
 
 public class ListStuff {
   /**
+   * Adds a new node with string s to the front of a linked list Nold
    * @param s word to be added to the linked list
    * @param Nold StringNode object to create linked list
-   * @return returns a StringNode reference representing the list obtained by adding s to the front of list Nold
+   * @return StringNode representing the list obtained by adding s to the
+   * front of list Nold
    */
   public static StringNode addToFront(String s, StringNode Nold) {
     StringNode front = new StringNode();
@@ -19,8 +20,10 @@ public class ListStuff {
   }
 
   /** 
+   * Turns Linked list N into a Stiring array
    * @param N StringNode object to create linked list
-   * @return a reference to an array containing the same strings as in the list N (in the order they were received)
+   * @return String array representing all of the strings originally in the
+   * linked list
    */
   public static String[] listToArray(StringNode N) {
     int length = ListLen(N);
@@ -32,8 +35,9 @@ public class ListStuff {
     return A;
   }
   /**
+   * Takes a linked list Nold and returns the number of nodes in the list
    * @param Nold Linked List
-   * @return returns the length of the linked list
+   * @return Returns the length of the linked list
    */
   public static int ListLen(StringNode Nold) {
     if(Nold == null) {
@@ -42,9 +46,8 @@ public class ListStuff {
     return 1 + ListLen(Nold.next);
   }
   /**
-   * Creates a linked list
-   * Prints out the contents of the linked list
-   * @param args default
+   * Creates a linked list and prints out the contents of the linked list
+   * @param args Default
    */
   public static void main(String [] Args) {
     StringNode N = null;
