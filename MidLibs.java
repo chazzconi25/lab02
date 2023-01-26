@@ -12,6 +12,10 @@ public class MidLibs{
      * @param args The file to be used as a madlib containing flags
      */
     public static void main(String [] args){
+        if(args.length == 0) {
+            System.out.println("usage: java MidLibs <filename>");
+            System.exit(1);
+        }
         Random rand = new Random(890);
         String[] madLib = WordRead.get(args[0]);
         for(int i = 0; i < madLib.length ; i++) {
@@ -30,7 +34,9 @@ public class MidLibs{
      * @return returns a random word from the randomword method
      */
     public static String replace(String flag, Random rand) {
-        if(flag.equals("@nounp")) {
+        if(flag.equals("@noun")) {
+            flag = randomWord("nouns.txt", rand);
+        } else if(flag.equals("@nounp")) {
             flag = randomWord("nouns.txt", rand) + "s";
         } else if(flag.equals("@adjective")) {
             flag = randomWord("adjectives.txt", rand);

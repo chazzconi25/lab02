@@ -21,12 +21,17 @@ public class Formatter {
     public static void writeInColumns(String[] A, int cols) {
         int lineTotal = 0;
         for(int i = 0; i < A.length; i++) {
-            if(lineTotal + 1 + A[i].length() > cols) {
+            if(lineTotal == 0) {
+                System.out.print(A[i]);
+                lineTotal = A[i].length();
+            } else if(lineTotal + A[i].length() +1 > cols) {
                 System.out.println();
-                lineTotal = 0;
+                System.out.print(A[i]);
+                lineTotal = A[i].length();
+            } else {
+                System.out.print(" " + A[i]);
+                lineTotal += (1 + A[i].length());
             }
-            lineTotal += A[i].length() + 1;
-            System.out.print(A[i] + " ");
         }
         System.out.println();
     }
