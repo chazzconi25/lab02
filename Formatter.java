@@ -20,7 +20,7 @@ public class Formatter {
      */
     public static void writeInColumns(String[] A, int cols) {
         int lineTotal = 0;
-        for(int i = A.length - 1; i >= 0; i--) {
+        for(int i = 0; i < A.length; i++) {
             if(lineTotal + 1 + A[i].length() > cols) {
                 System.out.println();
                 lineTotal = 0;

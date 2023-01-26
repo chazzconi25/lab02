@@ -14,7 +14,7 @@ public class MidLibs{
     public static void main(String [] args){
         Random rand = new Random(890);
         String[] madLib = WordRead.get(args[0]);
-        for(int i = 0; i < madLib.length; i++) {
+        for(int i = 0; i < madLib.length ; i++) {
             madLib[i] = replace(madLib[i], rand);
         }
         Formatter.writeInColumns(madLib, 35);
