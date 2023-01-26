@@ -5,11 +5,12 @@
 
 import java.io.*;
 import java.util.*;
-/**
- * Reads in text from a file and creates a linked list
- * @param fname The name of the file.
- */
+
 public class WordRead{
+    /**
+     * Reads in text from a file and creates a linked list
+     * @param fname The name of the file.
+     */
     public static String[] get(String fname) {
         Scanner sc = null;
         try {
