@@ -20,7 +20,7 @@ public class ListStuff {
 
   /** 
    * @param N StringNode object to create linked list
-   * @returnreturns a reference to an array containing the same strings as in the list N (in the order they were received)
+   * @return a reference to an array containing the same strings as in the list N (in the order they were received)
    */
   public static String[] listToArray(StringNode N) {
     int length = ListLen(N);
