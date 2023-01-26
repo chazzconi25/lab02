@@ -9,6 +9,7 @@ import java.util.*;
 public class MidLibs{
     /**
      * Runs the main Midlibs game. Prints a random madlib to the terminal
+     * @param args default
      */
     public static void main(String [] args){
         Random rand = new Random(890);
@@ -21,9 +22,9 @@ public class MidLibs{
     }
 
     /**
-     * @param
-     * @param
-     * @return
+     * @param flag The noun, adjective, or verb that needs to be replaced
+     * @param rand Random object
+     * @return returns a random word from the randomword method
      */
     public static String replace(String flag, Random rand) {
         if(flag.equals("@nounp")) {
@@ -38,8 +39,8 @@ public class MidLibs{
 
     /**
      * @param file The name of the file
-     * @param rand Random integer
-     * @return 
+     * @param rand Random integer to gt a random word
+     * @return returns a random word
      */
     public static String randomWord(String file, Random rand) {
         String[] fileWords = WordRead.get(file);
