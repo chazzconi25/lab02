@@ -7,7 +7,7 @@ import java.util.*;
  * @author Charlie Francesconi
  */
 public class MidLibs{
-    /*
+    /**
      * Runs the main Midlibs game. Prints a random madlib to the terminal
      * @param args default
      */
