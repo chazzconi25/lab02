@@ -1,7 +1,7 @@
 /**
  * MidLibs Game
  * @author David Kreidler
- * @author Chazz
+ * @author Charlie Francesconi
  */
 public class MidLibs{
     public static void main(String [] args){
