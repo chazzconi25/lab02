@@ -7,7 +7,7 @@ import java.util.*;
  * @author Charlie Francesconi
  */
 public class MidLibs{
-    /*
+    /**
      * Runs the main Midlibs game. Prints a random madlib to the terminal
      */
     public static void main(String [] args){
@@ -19,7 +19,7 @@ public class MidLibs{
         Formatter.writeInColumns(madLib, 35);
     }
 
-    /*
+    /**
      * @param
      * @param
      * @return
@@ -35,10 +35,10 @@ public class MidLibs{
         return flag;
     }
 
-    /*
-     * @param
-     * @param
-     * @return
+    /**
+     * @param file The name of the file
+     * @param rand Random integer
+     * @return 
      */
     public static String randomWord(String file, Random rand) {
         String[] fileWords = WordRead.get(file);
