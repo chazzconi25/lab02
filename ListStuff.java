@@ -6,11 +6,16 @@
  */
 
 public class ListStuff {
+<<<<<<< HEAD
   /**
    * @param s word to be added to the linked list
    * @param Nold StringNode object to create linked list
    * @return returns a StringNode reference representing the list obtained by adding s to the front of list Nold
    */
+=======
+  // addToFront(s,Nold) returns a StringNode reference representing the list
+  // obtained by adding s to the front of list Nold
+>>>>>>> 2a8a8144cef856e3223fe599453ad1ee131c0796
   public static StringNode addToFront(String s, StringNode Nold) {
     StringNode front = new StringNode();
     front.data = s;
@@ -18,10 +23,15 @@ public class ListStuff {
     return front;
   }
 
+<<<<<<< HEAD
   /** 
    * @param N StringNode object to create linked list
    * @returnreturns a reference to an array containing the same strings as in the list N (in the order they were received)
    */
+=======
+  // listToArray(N) returns a reference to an array containing the same
+  // strings as in the list N (in the order they were received)
+>>>>>>> 2a8a8144cef856e3223fe599453ad1ee131c0796
   public static String[] listToArray(StringNode N) {
     int length = ListLen(N);
     String [] A = new String[length];
@@ -48,7 +58,11 @@ public class ListStuff {
    */
   public static void main(String [] Args) {
     StringNode N = null;
+<<<<<<< HEAD
     N = addToFront("rat",N);  
+=======
+    N = addToFront("rat",N);
+>>>>>>> 2a8a8144cef856e3223fe599453ad1ee131c0796
     N = addToFront("dog",N);  
     N = addToFront("pig",N);  
     String[] A = listToArray(N);
