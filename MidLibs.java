@@ -17,6 +17,7 @@ public class MidLibs{
             madLib[i] = replace(madLib[i], rand);
         }
         Formatter.writeInColumns(madLib, 35);
+        
     }
 
     /**
